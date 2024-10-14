@@ -34,16 +34,17 @@
     margin-left: 150px;
   }
   
-  .form-container {
+  .form-containerx {
     width: 500px; 
     margin-right: 90px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 200px;
+    margin-bottom: 500px;
     width: 70%;
     font-family: Verdana;
 /* Adjust the width as needed */
   }
-  .form-container input {
+  .form-containerx input {
    
     padding: 10px;
     margin-bottom: 10px;
@@ -54,6 +55,23 @@
     box-sizing: border-box;
   }
   .button{
-    background-color:#9df3b8;
+    background-color:#00ff51;
     color: #011f12;
+  }
+  .vapp h1 {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .vapp p {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .para h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .para p {
+    text-align: left;
+    margin-left: 10px;
   }

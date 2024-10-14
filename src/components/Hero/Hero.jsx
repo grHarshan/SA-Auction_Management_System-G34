@@ -29,8 +29,8 @@ const Hero = () => {
             Budget-Friendly Options, There's Something for Everyone.
           </p><br />
           <div className="signbuttn">
-            <button type="submit" class="sbtn">Sign In</button> 
-            <button type="submit" class="sbtn">Sign up</button>
+          <Link to="/signin" ><button type="submit" class="sbtn">Sign In</button> </Link>
+          <Link to="/login" ><button type="submit" class="sbtn">Sign up</button></Link>
           </div>
         </div>
       </div>
@@ -44,7 +44,8 @@ const Hero = () => {
     </div>
     <div className="card-container">
         <div className="card">
-        <img src={car1} alt="car1" className="vehi" />
+        <Link to="/productdetails" >
+        <img src={car1} alt="car1" className="vehi" /></Link>
           <div className="card-info">
             <span className="auction-status live">Live Auction</span>
             <h3>Product Name</h3>
@@ -56,7 +57,8 @@ const Hero = () => {
         </div>
 
         <div className="card">
-        <img src={v2} alt="v2" className="vehi" />
+        <Link to="/productdetails" >
+        <img src={v2} alt="v2" className="vehi" /></Link>
           <div className="card-info">
             <span className="auction-status live">Live Auction</span>
             <h3>Product Name</h3>
@@ -69,7 +71,8 @@ const Hero = () => {
 
 
         <div className="card">
-        <img src={v3} alt="v3" className="vehi" />
+        <Link to="/productdetails" >
+        <img src={v3} alt="v3" className="vehi" /></Link>
           <div className="card-info">
             <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
             <h3>Product Name</h3>
@@ -81,7 +84,8 @@ const Hero = () => {
         </div>
 
         <div className="card">
-        <img src={v5} alt="v5" className="vehi" />
+        <Link to="/productdetails" >
+        <img src={v5} alt="v5" className="vehi" /></Link>
           <div className="card-info">
             <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
             <h3>Product Name</h3>
@@ -93,7 +97,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="bg3">
-        <img src={bg2} alt="bg2" className="image2" />
+      <Link to="/productdetails" >
+        <img src={bg2} alt="bg2" className="image2" /></Link>
         <div className="overlay2">
           <p>Trusted Partners</p>
           <h2>Partnering with the Most Trusted Names in the  Industry</h2>
