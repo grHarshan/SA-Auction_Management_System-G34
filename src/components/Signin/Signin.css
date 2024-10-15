@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana;
+  }
+  
+  .signin-page {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin-right: 10px;
+  }
+  .imagex{
+    width: 300px;
+    height: 700px;
+     
+
+  }
+  
+.imagexc {
+    position: absolute; /* Overlay this image on top of the previous one */
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    width: 600px; /* Adjust to your needs */
+    height: 400px; /* Adjust to your needs */
+    opacity: 0.8; /* Optional: add opacity to blend images */
+    margin-left: 200px;
+    margin-top: 300px;
+  }
+  
+  .image-column {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .form-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .signin-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   margin-left: 500px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+    margin-bottom: 10px;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .google-signin-btn {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .google-icon {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  .login-text {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-text a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .login-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .imagex {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    object-fit: contain;
+  }
+  

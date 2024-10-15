@@ -1,6 +1,7 @@
 import React from 'react';
 import './sell.css';
 import bg2 from '../../assets/bg2.png';
+import car1 from '../../assets/car1.png';
 
 const sell = () => {
   return (
@@ -14,7 +15,7 @@ const sell = () => {
           </p>
         </div>
       </div>
-
+      
       <div className="para">
        
        <h1>
@@ -31,35 +32,32 @@ const sell = () => {
            
            
         </div>
-
-        <div className="para">
-       
-       <h1>
-       Vehicle APPEAPPEARANCE 
-       </h1>
-       <p>Make Sure To Add Detailed Pictures</p>
-      </div> <br /><br />
-      <div className="container">
-      <div className="image-container"></div>
-      <div className="form-container">
-        <div className="input-container">
-          <input type="text" className="input-field" placeholder="SELECT YOUR VEHICLE TYPE" />
+        <div className="vapp">
+        <h1>Vehicle APPEAPPEARANCE </h1>
+        <p>Make Sure To Add Detailed Pictures</p>
         </div>
-        <div className="input-container">
-          <input type="text" className="input-field" placeholder="VEHICLE #####" />
-        </div>
-        <div className="input-container">
-          <input type="text" className="input-field" placeholder="VEHICLE #####" />
-        </div>
-        <div className="input-container">
-          <input type="text" className="input-field" placeholder="VEHICLE #####" />
-        </div>
-        <div className="input-container">
-          <input type="text" className="input-field" placeholder="VEHICLE #####" />
-        </div>
-        <button className="button">COMFORM DETAILS AND SED FOR APPROVAPPROVAL</button>
+        <div className="container">
+           
+    <div className="cardx">
+        
+        <img src={car1} alt="car1" className="vehi" /> 
+           
+      
       </div>
-    </div>
+      
+      <div className="form-containerx">
+        <div className="input-container">
+
+        <input type="text" placeholder="SELECT YOUR VEHICLE TYPE" />
+          <input type="text" placeholder="VEHICAL BRAND NAME" />
+          <input type="text" placeholder="DESCRIPTION ABOUT VEHICLE " />
+          <input type="text" placeholder="DESCRIPTION ABOUT CONDITION   " />
+          <input type="text" placeholder="LOCATE ADDRESS  " />
+
+
+           </div>
+         </div>
+         </div>
     </div>
   )
 }
