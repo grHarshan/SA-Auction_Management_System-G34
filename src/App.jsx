@@ -35,7 +35,7 @@ const App = () => {
           <Route path="*" element={<Navigate to="/Signin" />} />
           {/* Add more routes as needed */}
         </Routes>
-        <Footer /> {/* Place the Footer outside the Routes */}
+        <Footer />  
       </div>
     </BrowserRouter>
   );
