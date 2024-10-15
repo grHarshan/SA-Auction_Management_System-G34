@@ -30,9 +30,6 @@ const App = () => {
           <Route path="/profile2" element={<Profile2 />} />
           <Route path="/profile3" element={<Profile3 />} />
           <Route path="/sell" element={<Sell />} />
-<<<<<<< HEAD
-          
-=======
           <Route path="/productdetails" element={<Productdetails />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/Login" element={<Login />} />
@@ -40,7 +37,6 @@ const App = () => {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="*" element={<Navigate to="/Signin" />} />
           
->>>>>>> 911d15c990fd00bca9e55ae9ce349703e0492946
           {/* Add more routes as needed */}
         </Routes>
         <Footer />  
