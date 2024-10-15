@@ -14,7 +14,7 @@ const Navbar = () => {
         <ul>
           <li><Link to="/hero">Home</Link></li>
           <li><Link to="/allvehicles">All Vehicles</Link></li>
-          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/AboutUs">About Us</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
           <li><Link to="/buy" className="btn">Buy</Link></li>
           <li><Link to="/sell" className="btn">Sell</Link></li>
@@ -23,6 +23,7 @@ const Navbar = () => {
               <img src={p1} alt="P1" className="profile-picture" />
             </Link>
           </li>
+          <li><Link to="/ContactUs" className="ContactUs">Contact US</Link></li>
         </ul>
       </nav>
     </header>

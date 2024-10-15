@@ -12,6 +12,8 @@ import Productdetails from './components/productdetails/productdetails';
 import Signin from './components/Signin/Signin';
 import Login from './components/Login/Login';  
 import Bid from './components/bid/bid'; 
+import AboutUs from './components/AboutUs/AboutUs'; 
+
 
 
 
@@ -28,14 +30,20 @@ const App = () => {
           <Route path="/profile2" element={<Profile2 />} />
           <Route path="/profile3" element={<Profile3 />} />
           <Route path="/sell" element={<Sell />} />
+<<<<<<< HEAD
+          <Route path="/ContactUs" element={< ContactUs/>} />
+=======
           <Route path="/productdetails" element={<Productdetails />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/bid" element={<Bid />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="*" element={<Navigate to="/Signin" />} />
+          
+>>>>>>> 911d15c990fd00bca9e55ae9ce349703e0492946
           {/* Add more routes as needed */}
         </Routes>
-        <Footer /> {/* Place the Footer outside the Routes */}
+        <Footer />  
       </div>
     </BrowserRouter>
   );
