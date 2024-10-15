@@ -24,6 +24,7 @@ const App = () => {
           <Route path="/profile2" element={<Profile2 />} />
           <Route path="/profile3" element={<Profile3 />} />
           <Route path="/sell" element={<Sell />} />
+          <Route path="/ContactUs" element={< ContactUs/>} />
           {/* Add more routes as needed */}
         </Routes>
         <Footer /> {/* Place the Footer outside the Routes */}

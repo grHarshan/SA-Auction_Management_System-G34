@@ -23,6 +23,7 @@ const Navbar = () => {
               <img src={p1} alt="P1" className="profile-picture" />
             </Link>
           </li>
+          <li><Link to="/ContactUs" className="ContactUs">Contact US</Link></li>
         </ul>
       </nav>
     </header>
