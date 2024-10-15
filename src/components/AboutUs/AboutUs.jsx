@@ -2,16 +2,7 @@ import React from 'react';
 import bg2 from '../../assets/bg2.png';
 import nimsara from '../../assets/nimsara.jpg';
 import './AboutUs.css';
-
-const teamMembers = [
-  { id: 1, name: 'Full name', role: 'Undergraduate' },
-  { id: 2, name: 'Full name', role: 'Undergraduate' },
-  { id: 3, name: 'Full name', role: 'Undergraduate' },
-  { id: 4, name: 'M.A.Y. Malawanage', role: 'Undergraduate' },
-  { id: 5, name: 'B.H.R. Yashodara', role: 'Undergraduate' },
-  { id: 6, name: 'G.M.S. Nimsara', role: 'Undergraduate' },
-];
-
+ 
 const AboutUs = () => {
   return (
     <div>
@@ -32,26 +23,7 @@ const AboutUs = () => {
         </p>
 
         <div className="team-grid">
-          {teamMembers.map((member) => (
-            <div key={member.id} className="team-card">
-              <div className="team-photo">
-              <img src={nimsara} alt="nimsara" className="image" />
-              </div>
-              <h3 className="team-name">{member.name}</h3>
-              <p className="team-role">{member.role}</p>
-              <p className="team-bio">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-              </p>
-              <div className="team-socials">
-                <a href="#linkedin" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin"></i>
-                </a>
-                <a href="#github" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          ))}
+           
         </div>
 
         <div className="repo-section">
