@@ -1,16 +1,15 @@
 import React from 'react';
 import bg2 from '../../assets/bg2.png';
+import nimsara from '../../assets/nimsara.jpg';
 import './AboutUs.css';
 
 const teamMembers = [
   { id: 1, name: 'Full name', role: 'Undergraduate' },
   { id: 2, name: 'Full name', role: 'Undergraduate' },
   { id: 3, name: 'Full name', role: 'Undergraduate' },
-  { id: 4, name: 'Full name', role: 'Undergraduate' },
-  { id: 5, name: 'Full name', role: 'Undergraduate' },
-  { id: 6, name: 'Full name', role: 'Undergraduate' },
-  { id: 7, name: 'Full name', role: 'Undergraduate' },
-  { id: 8, name: 'Full name', role: 'Undergraduate' },
+  { id: 4, name: 'M.A.Y. Malawanage', role: 'Undergraduate' },
+  { id: 5, name: 'B.H.R. Yashodara', role: 'Undergraduate' },
+  { id: 6, name: 'G.M.S. Nimsara', role: 'Undergraduate' },
 ];
 
 const AboutUs = () => {
@@ -36,7 +35,7 @@ const AboutUs = () => {
           {teamMembers.map((member) => (
             <div key={member.id} className="team-card">
               <div className="team-photo">
-                <img src="https://via.placeholder.com/100" alt={member.name} />
+              <img src={nimsara} alt="nimsara" className="image" />
               </div>
               <h3 className="team-name">{member.name}</h3>
               <p className="team-role">{member.role}</p>
