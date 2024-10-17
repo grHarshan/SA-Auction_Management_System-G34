@@ -5,7 +5,7 @@ import bg2 from '../../assets/bg2.png';
 
 const ContactUs = () => {
     return ( 
-        <div>
+        <div >
       {/* Background Image Section */}
       <div className="bg2">
         <img src={bg2} alt="bg2" className="image" />
@@ -31,11 +31,20 @@ const ContactUs = () => {
         <label className='email'>Email</label>
         <input type='email' name='email' placeholder='Type Yor Email..'></input>
 
-        <label className='message'>Message</label>
-        <textarea type='text' name='message'rows={4}  placeholder='Type Your Message..'/>
+        <label className='message1'>Message</label>
+        <textarea type='text' name='message2'placeholder='Type Your Message..'/>
+
+        <div className=' checkbox-container'>
+        <input type='checkbox' name='terms'></input><p>I Accept the <span>Terms</span> </p>
 
         </div>
-        <label className='accept'>Message</label><input type='checkbox' name='terms'></input>
+
+        <div className='submit-container'>
+          <button type='button' name='submit'>Submit</button>
+        </div>
+
+        </div>
+        
 
 
         

@@ -1,0 +1,47 @@
+
+.ContactUs
+{
+    font-size: 25px;
+    font-weight: 1000;
+}
+.tagline
+{
+    font-size: 10px;
+
+}
+.title
+{
+    margin-top: 70px;
+}
+.input
+{
+    margin-bottom: 100px;
+}
+.Inputs
+
+{
+    width: 50%;
+}
+.message2
+{
+    height: 100%;
+}
+textarea
+{
+    width: 100%;
+    border-width: none;
+    height: 100px;
+}
+.checkbox-container
+{
+    align-content: baseline;
+}
+.submit-container button {
+    background-color:black; /* Change this to your desired color */
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
