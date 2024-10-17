@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContactUs.css';
 import { Link } from 'react-router-dom';
+import bg2 from '../../assets/bg2.png';
 
 const ContactUs = () => {
     return ( 
