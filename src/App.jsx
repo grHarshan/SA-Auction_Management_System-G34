@@ -13,7 +13,7 @@ import Signin from './components/Signin/Signin';
 import Login from './components/Login/Login';  
 import Bid from './components/bid/bid'; 
 import AboutUs from './components/AboutUs/AboutUs';
-import ContactUs from './components/ContactUs/ContactUsUs' ;
+import ContactUs from './components/ContactUs/ContactUs' ;
 
 
 
