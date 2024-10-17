@@ -32,14 +32,14 @@ const ContactUs = () => {
         <input type='email' name='email' placeholder='Type Yor Email..'></input>
 
         <label className='message'>Message</label>
-        <textarea type='text' name='message' rows={4} placeholder='Type Your Message..'/>
+        <input type='text' name='message' rows={4} placeholder='Type Your Message..'/>
 
         </div>
 
         {/*terms section*/}
         <div className='aceept'>
-            <input type='textbox' name='terms' required></input>
-            I Accept the Terms
+            <input type='textbox' name='terms' required> I Accept the Terms</input>
+           
 
         </div>
         
