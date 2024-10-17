@@ -14,7 +14,13 @@ const ContactUs = () => {
           <p>Reach out with your quesctions,comments or concerns.We are here to assist.</p>
         </div>
       </div>
+
+      <div className='title'>
+        <div className='tagline'></div>
+        <div className='ContactUs'>Contact Us</div>
       </div>
+      </div>
+
      );
 }
  
