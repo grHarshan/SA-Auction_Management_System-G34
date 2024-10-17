@@ -4,9 +4,16 @@ import { Link } from 'react-router-dom';
 
 const ContactUs = () => {
     return ( 
-        <div className="contact">
-            <h1>Contact US</h1>
+        <div>
+      {/* Background Image Section */}
+      <div className="bg2">
+        <img src={bg2} alt="bg2" className="image" />
+        <div className="overlay">
+          <h2>Get in Touch with Us</h2>
+          <p>Reach out with your quesctions,comments or concerns.We are here to assist.</p>
         </div>
+      </div>
+      </div>
      );
 }
  
