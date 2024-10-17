@@ -36,9 +36,7 @@ const ContactUs = () => {
 
         </div>
 
-        {/*terms section*/}
-        <div className='aceept'>
-            <input type='textbox' name='terms' required> </input>
+        
            
 
         </div>
