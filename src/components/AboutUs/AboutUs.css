@@ -17,6 +17,8 @@
     height: 100px;
     width: 100px;
     border-radius: 100%;
+    border: solid black;
+    border-width: 0.1px;
 }
 
 h3 {

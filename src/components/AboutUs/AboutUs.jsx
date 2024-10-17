@@ -2,6 +2,11 @@ import React from 'react';
 import bg2 from '../../assets/bg2.png';
 import nimsara from '../../assets/nimsara.jpg';
 import awa from '../../assets/awa.jpg';
+import rumesh from '../../assets/rumesh.jpeg';
+import harshana from '../../assets/harshana.jpeg';
+import tharindi from '../../assets/tharindi.jpeg';
+import awanthi from '../../assets/awanthi.jpeg';
+import ruwanthi from '../../assets/ruwanthi.jpeg';
  
 import './AboutUs.css';
 import { Link } from 'react-router-dom'; 
@@ -21,31 +26,31 @@ const AboutUs = () => {
       {/* Team Section */}
       <div class="profile-grid">
         <div class="pro">
-        <img src={awa} alt="awa" className="awa" />
-            <h3>name</h3>
+        <img src={rumesh} alt="rumesh" className="rumesh" />
+            <h3>G.R. Harshan</h3>
             <p>undergraduate</p>
         </div>
 
         <div class="pro">
-        <img src={awa} alt="awa" className="awa" />
-            <h3>name</h3>
+        <img src={harshana} alt="harshana" className="harshana" />
+            <h3>A.M. Harshana Bandara</h3>
             <p>undergraduate</p>
         </div>
 
         <div class="pro">
-        <img src={awa} alt="awa" className="awa" />
-            <h3>name</h3>
+        <img src={tharindi} alt="tharindi" className="tharindi" />
+            <h3>T.D.K. Arachchi</h3>
             <p>undergraduate</p>
         </div>
 
         <div class="pro">
-        <img src={awa} alt="awa" className="awa" />
+        <img src={awanthi} alt="awanthi" className="awanthi" />
             <h3>M.A.Y. Malawanage</h3>
             <p>undergraduate</p>
         </div>
 
         <div class="pro">
-        <img src={awa} alt="awa" className="awa" />
+        <img src={ruwanthi} alt="ruwanthi" className="ruwanthi" />
             <h3>B.H.R. Yashodara</h3>
             <p>undergraduate</p>
         </div>
