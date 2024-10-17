@@ -35,7 +35,7 @@ const ContactUs = () => {
         <textarea type='text' name='message'rows={4}  placeholder='Type Your Message..'/>
 
         </div>
-        <input type='checkbox' name='terms'></input>
+        <label className='accept'>Message</label><input type='checkbox' name='terms'></input>
 
 
         
