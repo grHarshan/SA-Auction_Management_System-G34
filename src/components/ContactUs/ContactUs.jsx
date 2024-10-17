@@ -25,12 +25,21 @@ const ContactUs = () => {
       {/*input section*/}
       <div className='Inputs'>
         <div className='input'>
-        <div className='name'>Name</div>
-        <input type='text'></input>
-        <div className='email'>Email</div>
-        <input type='email'></input>
-        <div className='message'>Message</div>
-        <input type='text'></input>
+        <label className='name'>Name</label>
+        <input type='text' name='name' placeholder='Type Yor Name...'></input>
+
+        <label className='email'>Email</label>
+        <input type='email' name='email' placeholder='Type Yor Email..'></input>
+
+        <label className='message'>Message</label>
+        <textarea type='text' name='message' rows={4} placeholder='Type Your Message..'/>
+
+        </div>
+
+        {/*terms section*/}
+        <div className='aceept'>
+            <input type='textbox' name='terms' required></input>
+            I Accept the Terms
 
         </div>
         
