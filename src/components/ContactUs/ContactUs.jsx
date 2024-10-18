@@ -2,6 +2,7 @@ import React from 'react';
 import './ContactUs.css';
 import { Link } from 'react-router-dom';
 import bg2 from '../../assets/bg2.png';
+import Con1 from '../../assets/Con1.jpg';
 
 const ContactUs = () => {
     return ( 
@@ -23,6 +24,7 @@ const ContactUs = () => {
       </div>
 
       {/*input section*/}
+      <div className='form-section'>
       <div className='Inputs'>
         <div className='input'>
         <label className='name'>Name</label>
@@ -35,7 +37,9 @@ const ContactUs = () => {
         <textarea type='text' name='message2'placeholder='Type Your Message..'/>
 
         <div className=' checkbox-container'>
-        <input type='checkbox' name='terms'></input><p>I Accept the <span>Terms</span> </p>
+          <label><input type='checkbox' name='terms'></input>
+          <span>I Accept the Terms</span></label>
+        
 
         </div>
 
@@ -44,17 +48,19 @@ const ContactUs = () => {
         </div>
 
         </div>
-        
-
-
-        
-           
-
+      
         </div>
+        <div className='image'>
+      <img src={Con1} alt="Contact" className="Contact-image" />
+      </div>
+        
         
 
       </div>
 
+      
+      </div>
+      
       
       
 
