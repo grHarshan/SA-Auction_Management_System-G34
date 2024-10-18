@@ -14,7 +14,7 @@ import Login from './components/Login/Login';
 import Bid from './components/bid/bid'; 
 import AboutUs from './components/AboutUs/AboutUs';
 import ContactUs from './components/ContactUs/ContactUs' ;
-
+import Admindash from './components/admindash/admindash' ;
 
 
 
@@ -37,6 +37,7 @@ const App = () => {
           <Route path="/bid" element={<Bid />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/admindash" element={<Admindash />} />
           <Route path="*" element={<Navigate to="/Signin" />} />
           
           {/* Add more routes as needed */}
