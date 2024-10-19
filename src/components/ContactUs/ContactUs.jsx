@@ -2,7 +2,6 @@ import React from 'react';
 import './ContactUs.css';
 import { Link } from 'react-router-dom';
 import bg2 from '../../assets/bg2.png';
-import Con1 from '../../assets/Con1.jpg';
 
 const ContactUs = () => {
     return ( 
@@ -16,52 +15,40 @@ const ContactUs = () => {
         </div>
       </div>
 
-      {/*title section*/}
-
       <div className='title'>
-        <div className='tagline'>Tagline</div>
-        <div className='ContactUs'>Contact Us</div>
-      </div>
+                <div className='tagline'>We're Here to Help</div>
+                <div className='contact-heading'>Contact Us</div>
+            </div>
 
-      {/*input section*/}
-      <div className='form-section'>
-      <div className='Inputs'>
-        <div className='input'>
-        <label className='name'>Name</label>
-        <input type='text' name='name' placeholder='Type Yor Name...'></input>
+            {/* Input Section */}
+            <div className='inputs-container'>
+                <div className='input'>
+                    <label className='label' htmlFor='name'>Name</label>
+                    <input type='text' id='name' placeholder='Enter your name...' className='input-field' />
 
-        <label className='email'>Email</label>
-        <input type='email' name='email' placeholder='Type Yor Email..'></input>
+                    <label className='label' htmlFor='email'>Email</label>
+                    <input type='email' id='email' placeholder='Enter your email...' className='input-field' />
 
-        <label className='message1'>Message</label>
-        <textarea type='text' name='message2'placeholder='Type Your Message..'/>
+                    <label className='label' htmlFor='message'>Message</label>
+                    <textarea id='message' placeholder='Write your message...' className='textarea-field'></textarea>
 
-        <div className=' checkbox-container'>
-          <label><input type='checkbox' name='terms'></input>
-          <span>I Accept the Terms</span></label>
-        
+                    <div className='checkbox-container'>
+                        <input type='checkbox' id='terms' />
+                        I accept the Terms.
+                        
+                    </div>
 
-        </div>
+                    <div className='submit-container'>
+                        <button type='submit' className='submit-btn'>Submit</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+                
 
-        <div className='submit-container'>
-          <button type='button' name='submit'>Submit</button>
-        </div>
 
-        </div>
-      
-        </div>
-        <div className='image'>
-      <img src={Con1} alt="Contact" className="Contact-image" />
-      </div>
-        
-        
-
-      </div>
-
-      
-      </div>
-      
-      
+           
+   
       
 
      );

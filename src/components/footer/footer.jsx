@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  
 import './footer.css';
 import logo from '../../assets/Content.png';
  
@@ -12,12 +13,12 @@ const Footer = () => {
       </div>
       </p>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/vehicles">All Vehicles</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-        <li><a href="/profile">Profile</a></li>
-      </ul>
+          <li><Link to="/hero">Home</Link></li>
+          <li><Link to="/allvehicles">All Vehicles</Link></li>
+          <li><Link to="/AboutUs">About Us</Link></li>
+          <li><Link to="/ContactUs">ContactUs</Link></li>
+          <li><Link to="/profile">Profile</Link></li>
+        </ul>
     </footer>
   );
 };

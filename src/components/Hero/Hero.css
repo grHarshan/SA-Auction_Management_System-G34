@@ -1,125 +1,184 @@
-.Hero img{
-   height: 450px;
-   width: 1500px;
- }
-
- .Hero h1{
-    text-decoration: none;
-    color:black;
-    font-family: Verdana;
-    text-align: center;
- }
- .Hero p{
-    text-decoration: none;
-    color:black;
-    font-family: Verdana;
-    text-align: center;
- }
-.bg2 img {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    text-align: center;
-    display: flex;
-     
-}
-.bg3 img {
-  width: 100%;
-  height: 500px;
-  position: relative;
+/* Styling for the Hero section */
+.Hero-content {
   text-align: center;
-  display: flex;
-   
+  padding: 20px 0; /* Add padding to the top and bottom */
+  background-color: #ffffff; /* Optional: Add a background color for contrast */
 }
 
-.bg3 {
-  position: relative;
-  display: inline-block;
-  width: 100%;  
-  text-align: center;
+.Hero-content img {
+  max-width: 100%; /* Ensure the image scales to fit the container */
+  margin-bottom: 20px; /* Add space between the image and the text */
 }
 
-.logos {
-  height: 40px;
-  width:700px;
-  margin-bottom: 100px;
-
+.Hero-content h1 {
+  font-size: 3rem; /* Increase font size for the main heading */
+  font-weight: bold; /* Make the heading bold */
+  margin-bottom: 10px; /* Add space between the heading and the paragraph */
+  color: #333; /* Optional: Update text color */
 }
+
+.Hero-content p {
+  font-size: 1.5rem; /* Increase the font size for the paragraph */
+  margin-bottom: 40px; /* Add space below the paragraph */
+  color: #666; /* Optional: Set a different color for the paragraph */
+  max-width: 800px; /* Limit the width of the paragraph */
+  margin-left: auto; /* Center align the paragraph */
+  margin-right: auto; /* Center align the paragraph */
+}
+
 .bg2 {
-   position: relative;
-   display: inline-block;
-   width: 100%;  
-   text-align: center;
- }
- 
- .image {
-   width: 100%; 
-   height: auto;
- }
- 
- .overlay {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: white;
-   font-family: Verdana;
- }
-  
-.overlay2 {
+  position: relative;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bg2 img.image {
+  width: 100%; /* Ensure the image takes the full width of the parent */
+}
+
+.overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-family: Verdana;
+  text-align: center;
+  color: #fff; /* Set the text color to white */
+  padding: 20px;
 }
-.overlay2 p{
-  color: white;
+
+.overlay h2 {
+  font-size: 2rem; /* Increase the font size for the sub-heading */
+  font-weight: bold; /* Make the sub-heading bold */
+  margin-bottom: 10px; /* Add margin below the sub-heading */
 }
- 
- h2, p {
-   margin: 0;
- }
-.overlay p{
-   color: white;
-} 
- 
- 
-.card-container {
-  display: flex;  
-  flex-wrap: wrap;  
-  justify-content: space-between;  
+
+.overlay p {
+  color: #c5c3c3;
+  font-size: 1rem; /* Increase font size for the paragraph in the overlay */
+  margin-bottom: 0; /* Remove bottom margin */
+  max-width: 600px; /* Set a max-width to avoid very wide paragraphs */
+  margin-left: auto; /* Center the paragraph */
+  margin-right: auto; /* Center the paragraph */
+}
+
+
+
+.main-content {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+
+
+.featured-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px 0;
+  width: 80%;
   
 }
 
-.card {
-  width: 300px; 
-  margin-bottom: 20px;  
-  border: 2px solid #000000;
-  border-radius: 0px;
-  overflow: hidden; 
-  margin-left: 30px;
-  margin-right: 30px;
+.featured-section .content {
+  flex: 1;
+  text-align: left;
 }
 
-.vehi {
-  width: 50px;  
-  height: 100px;  
-  object-fit: cover; 
+.featured-section .content .most-viewed {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d78b10;
+}
+
+.featured-section .content .title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.featured-section .content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20;
+  text-align: left;
+}
+
+.featured-section .action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.featured-section .action .btn {
+  margin-left: 20px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.featured-section .action .btn:hover {
+  background-color: #000000; 
+  color: #ffff;
+  transform: translateY(-5px); 
+}
+
+ 
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .card-info {
-  padding: 0px;
+  padding: 10px;
+  
 }
 
-.card img{
-  width: 270px;
-  height: 150px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 60px;
+.auction-status {
+  font-size: 0.9rem;
+  padding: 5px;
+  border-radius: 3px;
 }
+
+.auction-status.live {
+  background-color: green;
+  color: white;
+}
+
+.auction-status.timed {
+  background-color: orange;
+  color: white;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
 
 .auction-status {
   font-size: 12px;
@@ -154,12 +213,7 @@
   color: #666;
   
 }
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
+
 
 .auction-info {
   flex: 1;
@@ -209,4 +263,31 @@
   background-color: #000;
   color: #fff;
   border: 2px solid #fff;
+}
+
+
+
+.counters-section {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -75px; /* Adjust this value as needed */
+}
+
+.counter-item {
+  text-align: center;
+  border-left: 5px solid #7e7c7c; 
+  padding-left: 10px;
+}
+
+.counter-item h3 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.counter-item p {
+  font-size: 1.2rem;
+  color: #555;
 }

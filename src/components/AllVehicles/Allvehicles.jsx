@@ -33,398 +33,126 @@ const Allvehicles = () => {
           </p>
         </div>
       </div>
-<div className="header">
-      <div className="search-bar">
-        <input type="text" placeholder="Search" />
-        <i className="fa fa-search" aria-hidden="true"></i>
+
+
+      <div className="header">
+        <div className="search-bar">
+          <input type="text" placeholder="Search" />
+          <i className="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div className="right-side">
+          <i className="fa fa-bell" aria-hidden="true"></i>
+          <img src={p1} alt="Profile" className="profile-picture" />
+          <span className="username">James Smith</span>
+        </div>
       </div>
-      <div className="right-side">
-        <i className="fa fa-bell" aria-hidden="true"></i>
-        <img src={p1} alt="P1" className="profile-picture" />
-        <span className="username">James Smith</span>
+
+
+
+      <div className="card-container">
+        {[car1, v2, v6, v5].map((image, index) => (
+          <div className="card" key={index}>
+            <Link to="/productdetails">
+              <img src={image} alt={`Vehicle ${index + 1}`} className="vehi" />
+            </Link>
+            <div className="card-info">
+              <span className={`auction-status ${index % 2 === 0 ? 'live' : 'timed'}`}>
+                {index % 2 === 0 ? 'Live Auction' : '2D: 12H: 34Min: 52Sec'}
+              </span>
+              <h3>Product Name</h3>
+              <p>Variant</p>
+              <p>
+                $55 <span className="bid-type">({index % 2 === 0 ? 'Highest Bid' : 'Minimum Bid'})</span>
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="card-container">
+        {[car1, v2, v6, v5].map((image, index) => (
+          <div className="card" key={index}>
+            <Link to="/productdetails">
+              <img src={image} alt={`Vehicle ${index + 1}`} className="vehi" />
+            </Link>
+            <div className="card-info">
+              <span className={`auction-status ${index % 2 === 0 ? 'live' : 'timed'}`}>
+                {index % 2 === 0 ? 'Live Auction' : '2D: 12H: 34Min: 52Sec'}
+              </span>
+              <h3>Product Name</h3>
+              <p>Variant</p>
+              <p>
+                $55 <span className="bid-type">({index % 2 === 0 ? 'Highest Bid' : 'Minimum Bid'})</span>
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="card-container">
+        {[car1, v2, v6, v5].map((image, index) => (
+          <div className="card" key={index}>
+            <Link to="/productdetails">
+              <img src={image} alt={`Vehicle ${index + 1}`} className="vehi" />
+            </Link>
+            <div className="card-info">
+              <span className={`auction-status ${index % 2 === 0 ? 'live' : 'timed'}`}>
+                {index % 2 === 0 ? 'Live Auction' : '2D: 12H: 34Min: 52Sec'}
+              </span>
+              <h3>Product Name</h3>
+              <p>Variant</p>
+              <p>
+                $55 <span className="bid-type">({index % 2 === 0 ? 'Highest Bid' : 'Minimum Bid'})</span>
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="card-container">
+        {[car1, v2, v6, v5].map((image, index) => (
+          <div className="card" key={index}>
+            <Link to="/productdetails">
+              <img src={image} alt={`Vehicle ${index + 1}`} className="vehi" />
+            </Link>
+            <div className="card-info">
+              <span className={`auction-status ${index % 2 === 0 ? 'live' : 'timed'}`}>
+                {index % 2 === 0 ? 'Live Auction' : '2D: 12H: 34Min: 52Sec'}
+              </span>
+              <h3>Product Name</h3>
+              <p>Variant</p>
+              <p>
+                $55 <span className="bid-type">({index % 2 === 0 ? 'Highest Bid' : 'Minimum Bid'})</span>
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="card-container">
+        {[car1, v2, v6, v5].map((image, index) => (
+          <div className="card" key={index}>
+            <Link to="/productdetails">
+              <img src={image} alt={`Vehicle ${index + 1}`} className="vehi" />
+            </Link>
+            <div className="card-info">
+              <span className={`auction-status ${index % 2 === 0 ? 'live' : 'timed'}`}>
+                {index % 2 === 0 ? 'Live Auction' : '2D: 12H: 34Min: 52Sec'}
+              </span>
+              <h3>Product Name</h3>
+              <p>Variant</p>
+              <p>
+                $55 <span className="bid-type">({index % 2 === 0 ? 'Highest Bid' : 'Minimum Bid'})</span>
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
 
-    <div className="card-container">
-        <div className="card"><Link to="/productdetails" >
-        <img src={car1} alt="car1" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v2} alt="v2" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v3} alt="v3" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v5} alt="v5" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="card-container">
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v6} alt="v6" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v7} alt="v7" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v8} alt="v8" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v9} alt="v9" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="card-container">
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v10} alt="v10" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v11} alt="v11" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v2} alt="v2" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v3} alt="v3" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="card-container">
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v7} alt="v7" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v10} alt="v10" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v6} alt="v6" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v7} alt="v7" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <var><div className="card-container">
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v3} alt="v3" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v10} alt="v10" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v3} alt="v3" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v3} alt="v3" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-        
-      </div>
-      <div className="card-container">
-        
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={car1} alt="car1" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v2} alt="v2" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v3} alt="v3" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v5} alt="v5" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="card-container">
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v6} alt="v6" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v7} alt="v7" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v8} alt="v8" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={v9} alt="v9" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-      </div></var>
-    </div>
+    
+      
+    
 
     
   )
