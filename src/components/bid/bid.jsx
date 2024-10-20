@@ -6,6 +6,7 @@ import v2 from '../../assets/v2.png';
 import v3 from '../../assets/v3.png'; 
 import v5 from '../../assets/v5.png'; 
 import { Link } from 'react-router-dom'; 
+import FeaturedAuctions from '../FeaturedAuctions/FeaturedAuctions';
 
 
 const productdetails = () => {
@@ -126,66 +127,8 @@ const productdetails = () => {
         </form>
       </div>
     </div>
-    <div className="container">
-      <div className="auction-info">
-        <span className="most-viewed">MOST VIEWED</span>
-        <h2 className="title">Featured Auctions</h2>
-        <p>Top Vehicles at Unbeatable Starting Bids - Place Your Bid Now and Drive Away with a Deal!</p>
-      </div>
-      <Link to="/allvehicles" className="btn">See more</Link>
-    </div>
 
-    <div className="card-container">
-        <div className="card">
-        <Link to="/productdetails" >
-        <img src={car1} alt="car1" className="vehi" /></Link>
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <img src={v2} alt="v2" className="vehi" />
-          <div className="card-info">
-            <span className="auction-status live">Live Auction</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Highest Bid)</span>
-            </p>
-          </div>
-        </div>
-
-
-        <div className="card">
-        <img src={v3} alt="v3" className="vehi" />
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-
-        <div className="card">
-        <img src={v5} alt="v5" className="vehi" />
-          <div className="card-info">
-            <span className="auction-status timed">2D: 12H: 34Min: 52Sec</span>
-            <h3>Product Name</h3>
-            <p>Variant</p>
-            <p>
-              $55 <span className="bid-type">(Minimum Bid)</span>
-            </p>
-          </div>
-        </div>
-      </div>
+    <FeaturedAuctions />
 
 
 
