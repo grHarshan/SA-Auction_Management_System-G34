@@ -17,7 +17,6 @@ const Signin = () => {
       <div className="form-column">
         <div className="signin-container">
           <h1>Sign Up</h1>
-          <p>Lorem ipsum dolor sit amet adipiscing elit.</p>
           <form>
             <div className="form-group">
               <label htmlFor="name">Name*</label>
