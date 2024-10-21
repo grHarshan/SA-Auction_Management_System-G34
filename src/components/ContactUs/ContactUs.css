@@ -113,3 +113,22 @@
     padding: 50px;
     
   }
+  .message {
+    background-color: #dff0d8;
+    color: #3c763d; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 20px;
+    text-align: center; 
+    font-weight: bold; 
+    position: relative; 
+    z-index: 1; 
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
