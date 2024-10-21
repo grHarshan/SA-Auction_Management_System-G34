@@ -48,10 +48,10 @@ const ContactUs = () => {
                 </div>
                 <div className='contact-icons'>
                   
-                  <img src={phone.jpg} className='imgC'></img>
+                  <img src={phone} className='imgC'></img>
                   <h1>Vv@gmail.com</h1>
 
-                  <img src={mail.jpg} className='imgC'></img>
+                  <img src={mail} className='imgC'></img>
                   <h1>+94 715428765</h1>
 
                   <img src='' className='imgC'></img>
