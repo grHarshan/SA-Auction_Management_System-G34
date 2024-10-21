@@ -43,6 +43,19 @@ const ContactUs = () => {
                     </div>
                 </div>
                 </div>
+                <div className='contact-icons'>
+                  
+                  <img src='' className='imgC'></img>
+                  <h1>Vv@gmail.com</h1>
+
+                  <img src='' className='imgC'></img>
+                  <h1>+94 715428765</h1>
+
+                  <img src='' className='imgC'></img>
+                  <h1>1/12 A, Pitipna Road, Homagama.</h1>
+
+
+                </div>
                 </div>
                 
 
