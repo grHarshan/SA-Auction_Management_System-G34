@@ -27,7 +27,7 @@
 
 .inputs-container {
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
     padding: 50px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -90,3 +90,26 @@
 .submit-btn:hover {
     background-color: #0056b3;
 }
+.imgC
+{
+    width: 40px;
+    height: 40px;
+}
+.contact-icons {
+    display: flex;
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center; /* Align items vertically */
+    padding: 20px 150px;
+    margin-top:50px;
+    
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text */
+    align-items: center; /* Center icon and text */
+    text-align: center;
+    margin: 0px 10px; /* Space between items */
+    padding: 50px;
+    
+  }
