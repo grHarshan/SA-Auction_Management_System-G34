@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import bg2 from '../../assets/bg2.png';
 import phone from '../../assets/phone.jpg';
 import mail from '../../assets/mail.jpg';
-import locate from '../../assets/location.jpg';
+import locate from '../../assets/locate.jpg';
 
 
 const ContactUs = () => {
@@ -48,15 +48,25 @@ const ContactUs = () => {
                 </div>
                 </div>
                 <div className='contact-icons'>
-                  
+                  <div className='contact-item'>
                   <img src={phone} className='imgC'></img>
-                  <h1>Vv@gmail.com</h1>
+                  <h5>+94 758421523</h5>
+                  </div>
 
+                  <div className='contact-item'>
                   <img src={mail} className='imgC'></img>
-                  <h1>+94 715428765</h1>
+                  <h5>Autovista@gmail.com</h5> 
+                  </div>
+                  
+                  
 
+                  <div className='contact-item'>
                   <img src={locate} className='imgC'></img>
-                  <h1>1/12 A, Pitipna Road, Homagama.</h1>
+                  <h5>1/12 A, Pitipna Road, Homagama.</h5>
+
+                  </div>
+
+                  
 
 
                 </div>
