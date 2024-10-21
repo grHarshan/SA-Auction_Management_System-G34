@@ -1,7 +1,6 @@
 import React from 'react';
 import bg2 from '../../assets/bg2.png';
 import nimsara from '../../assets/nimsara.jpg';
-import awa from '../../assets/awa.jpg';
 import rumesh from '../../assets/rumesh.jpeg';
 import harshana from '../../assets/harshana.jpeg';
 import tharindi from '../../assets/tharindi.jpeg';
