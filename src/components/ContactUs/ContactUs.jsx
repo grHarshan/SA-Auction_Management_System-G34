@@ -28,17 +28,17 @@ const ContactUs = () => {
             <div className='inputs-container'>
                 <div className='input'>
                     <label className='label' htmlFor='name'>Name</label>
-                    <input type='text' id='name' placeholder='Enter your name...' className='input-field' />
+                    <input type='text' id='name' placeholder='Enter your name...' className='input-field' required />
 
                     <label className='label' htmlFor='email'>Email</label>
-                    <input type='email' id='email' placeholder='Enter your email...' className='input-field' />
+                    <input type='email' id='email' placeholder='Enter your email...' className='input-field'  required/>
 
                     <label className='label' htmlFor='message'>Message</label>
-                    <textarea id='message' placeholder='Write your message...' className='textarea-field'></textarea>
+                    <textarea id='message' placeholder='Write your message...' className='textarea-field' required></textarea>
 
                     <div className='checkbox-container'>
-                        <input type='checkbox' id='terms' />
-                        I accept the Terms.
+                    <input type='checkbox' id='terms' required />
+                    <label htmlFor='terms'>I accept the Terms.</label>
                         
                     </div>
 
