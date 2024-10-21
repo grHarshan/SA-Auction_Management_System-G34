@@ -97,9 +97,9 @@
 }
 .contact-icons {
     display: flex;
-    justify-content: space-around; /* Spread items evenly */
+    justify-content: space-between; /* Spread items evenly */
     align-items: center; /* Align items vertically */
-    padding: 20px 70px;
+    padding: 20px 150px;
     margin-top:50px;
     
   }
@@ -109,7 +109,7 @@
     flex-direction: column; /* Stack icon and text */
     align-items: center; /* Center icon and text */
     text-align: center;
-    margin: 10px 10px; /* Space between items */
+    margin: 0px 10px; /* Space between items */
     padding: 50px;
     
   }
