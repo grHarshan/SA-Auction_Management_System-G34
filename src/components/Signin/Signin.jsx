@@ -7,6 +7,17 @@ import { Link } from 'react-router-dom';
 // Assuming the image is located in your assets folder
 // Assuming the image is located in your assets folder
 
+//toast
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const notify = ()=>{
+  toast.success('SingUp Successfully!',{
+    autoClose: 1500,
+    theme: "colored",
+  })
+};
+
 const Signin = () => {
   return (
     <div className="signin-page">
@@ -14,26 +25,32 @@ const Signin = () => {
         <img src={wer} alt="wer" className="imagex" />
         <img src={Vehiii} alt="vehiii" className="imagexc" />
       </div>
+
       <div className="form-column">
         <div className="signin-container">
           <h1>Sign Up</h1>
+
           <form>
             <div className="form-group">
               <label htmlFor="name">Name*</label>
               <input type="text" id="name" placeholder="Enter your name" required />
             </div>
+
             <div className="form-group">
               <label htmlFor="email">Email*</label>
               <input type="email" id="email" placeholder="Enter your email" required />
             </div>
+
             <div className="form-group">
               <label htmlFor="phone">Phone Number*</label>
               <input type="tel" id="phone" placeholder="Enter your phone number" required />
             </div>
+
             <div className="form-group">
               <label htmlFor="house">House Number*</label>
               <input type="text" id="house" placeholder="Enter your house number" required />
             </div>
+
             <div className="form-group">
               <label htmlFor="province">Select Your Province*</label>
               <select id="province" required>
@@ -43,12 +60,14 @@ const Signin = () => {
                 <option value="province3">Province 3</option>
               </select>
             </div>
+
             <div className="form-group">
               <label htmlFor="password">Password*</label>
               <input type="password" id="password" placeholder="Enter your password" required />
             </div>
-            <button type="submit" className="signin-btn">Sign up</button>
-            <button type="button" className="google-signin-btn">
+            
+            <button type="submit" className="signin-btn" onClick={notify}>Sign up</button>
+            <button type="button" className="google-signin-btn" onClick={notify}>
               <span className="google-icon">G</span> Sign up with Google
             </button>
             <p className="login-text">
@@ -57,6 +76,7 @@ const Signin = () => {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Login = () => {
       </div>
       <div className="form-column">
         <div className="signin-container">
-          <h1>Sign Up</h1>
+          <h1>Sign In</h1>
           <form>
             <div className="form-group">
               <label htmlFor="name">Name*</label>
@@ -30,7 +30,7 @@ const Login = () => {
              
             <Link to="/hero"><button type="submit" className="signin-btn">Login</button></Link>
             <button type="button" className="google-signin-btn">
-              <span className="google-icon">G</span> Sign up with Google
+              <span className="google-icon">G</span> Sign In with Google
             </button>
             <p className="login-text">
               Already have an account? <Link to="/signin">Sign In</Link>
