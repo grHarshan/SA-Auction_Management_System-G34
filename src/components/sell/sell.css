@@ -1,77 +1,91 @@
-.para{
-    font-family: Verdana;
-    margin-left: 30px;
+.para {
+  font-family: Verdana;
+  margin-left: 30px;
 }
-.vehicle-inputs {
-    margin-top: 20px;
-    margin-left: 200px;
-    width: 70%;
-    font-family: Verdana;
 
-  }
+.container01 {
+  width: 70%; 
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-  .vehicle-inputs input {
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  margin-top: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.admin-actions {
+  display: flex;
+  justify-content: flex-end;
    
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: Verdana;
+}
 
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-  .container {
-    display: flex;
-    justify-content: space-between; /* Align items horizontally */
-    align-items: center; /* Align items vertically */
-  }
-  
-  .image-container {
-    width: 400px;
-    height: 400px;
-    background-color: lightgray;
-    margin-bottom: 20px;
-    margin-left: 150px;
-  }
-  
-  .form-containerx {
-    width: 500px; 
-    margin-right: 90px;
-    margin-top: 10px;
-    margin-left: 200px;
-    margin-bottom: 500px;
-    width: 70%;
-    font-family: Verdana;
-/* Adjust the width as needed */
-  }
-  .form-containerx input {
-   
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: Verdana;
+.submit-button,
+.cancel-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-  .button{
-    background-color:#00ff51;
-    color: #011f12;
-  }
-  .vapp h1 {
-    text-align: left;
-    margin-left: 20px;
-  }
-  .vapp p {
-    text-align: left;
-    margin-left: 20px;
-  }
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  margin: 20px;
+}
 
-  .para h1 {
-    text-align: left;
-    margin-left: 10px;
-  }
-  .para p {
-    text-align: left;
-    margin-left: 10px;
-  }
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  margin: 20px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.vehi {
+  width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.image-upload-section {
+  margin-top: 20px;
+}
+
+.image-upload {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-upload input {
+  margin-right: 10px;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #555;
+}

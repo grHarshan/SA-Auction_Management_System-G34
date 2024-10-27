@@ -64,19 +64,19 @@ const Allvehicles = () => {
     const [timeLeft, setTimeLeft] = useState(vehicle.countdownTime);
 
     useEffect(() => {
-      if (vehicle.auctionType === 'live') return; // No countdown for live auctions
+      if (vehicle.auctionType === 'live') return; 
 
       const timerId = setInterval(() => {
         setTimeLeft((prevTime) => {
           if (prevTime <= 0) {
             clearInterval(timerId);
-            return 0; // Stop the countdown at 0
+            return 0; 
           }
-          return prevTime - 1; // Decrease by 1 second
+          return prevTime - 1; 
         });
       }, 1000);
 
-      return () => clearInterval(timerId); // Cleanup the timer on component unmount
+      return () => clearInterval(timerId); 
     }, [vehicle.auctionType]);
 
     const formatTime = (time) => {

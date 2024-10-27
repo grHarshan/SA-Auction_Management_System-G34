@@ -7,7 +7,7 @@ import FeaturedAuctions from '../FeaturedAuctions/FeaturedAuctions';
 const ProductDetails = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const { vehicle } = location.state || {}; // Access the passed vehicle data
+    const { vehicle } = location.state || {}; 
 
     if (!vehicle) {
         return <p>No vehicle data found. Please go back and select a vehicle.</p>;

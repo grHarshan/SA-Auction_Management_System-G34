@@ -1,16 +1,12 @@
 import React from 'react'
 import bg2 from '../../assets/bg2.png';
 import './bid.css';
-import car1 from '../../assets/car1.png';
-import v2 from '../../assets/v2.png'; 
-import v3 from '../../assets/v3.png'; 
-import v5 from '../../assets/v5.png'; 
-import { Link } from 'react-router-dom'; 
 import FeaturedAuctions from '../FeaturedAuctions/FeaturedAuctions';
 
 
 const productdetails = () => {
   return (
+
     
     <div>
       <div>
