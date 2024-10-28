@@ -13,6 +13,7 @@ import Signin from './components/Signin/Signin';
 import Login from './components/Login/Login';  
 import Bid from './components/bid/bid'; 
 import AboutUs from './components/AboutUs/AboutUs'; 
+import Cart from './components/Cart/cart';
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/Login" element={<Login />} />
           <Route path="/bid" element={<Bid />} />
           <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/cart" element={<Cart />} /> {/* Add this line for the Cart page */}
           <Route path="*" element={<Navigate to="/Signin" />} />
           
           {/* Add more routes as needed */}

@@ -1,0 +1,144 @@
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form styling */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.form-group label {
+    flex: 1;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* General button styling */
+.btn {
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 9px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Button variations */
+.btn-primary {
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #495057;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #929292;
+}
+
+.btn-secondary:hover {
+    background-color: #929292;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.table-dark {
+    background-color: #ffffff; /* Set body background color to white */
+    color: black; /* Change text color to black */
+}
+
+.table-dark th,
+.table-dark td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #495057; /* Light border for rows */
+}
+
+.table-dark th {
+    background-color: #495057; /* Keep header background color unchanged */
+}
+
+.table-dark tr {
+    transition: background-color 0.3s ease; /* Smooth transition for row hover */
+}
+
+.table-dark tr:hover {
+    background-color: #e9ecef; /* Light gray background on row hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack label and input vertically on smaller screens */
+        align-items: flex-start; /* Align labels and inputs to the start */
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        width: 100%; /* Full-width buttons on smaller screens */
+        margin-bottom: 10px; /* Space between stacked buttons */
+    }
+
+    .form-control {
+        font-size: 14px; /* Adjust font size for readability on smaller screens */
+    }
+}
