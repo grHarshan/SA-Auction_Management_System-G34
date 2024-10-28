@@ -36,7 +36,7 @@ const Allvehicles = () => {
     },
     {
       image: v6,
-      name: "Sedan",
+      name: "Bus",
       variant: "Model Z",
       price: 25000,
       auctionStatus: "Live Auction",

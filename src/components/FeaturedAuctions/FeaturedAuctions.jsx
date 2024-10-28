@@ -17,7 +17,7 @@ const FeaturedAuctions = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 1024,

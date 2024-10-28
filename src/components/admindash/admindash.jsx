@@ -1,76 +1,181 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import bg2 from '../../assets/bg2.png';
 import './admindash.css';
-import car1 from '../../assets/car1.png';
-  // Assuming you have more car images
- 
 
 const Admindash = () => {
+  const [vehicles, setVehicles] = useState([]);
+  const [bids, setBids] = useState([]);
+  const [activeTab, setActiveTab] = useState('vehicles');
+
+  useEffect(() => {
+    const fetchedVehicles = JSON.parse(localStorage.getItem('vehicleSubmissions')) || [];
+    const fetchedBids = JSON.parse(localStorage.getItem('bids')) || [];
+    setVehicles(fetchedVehicles);
+    setBids(fetchedBids);
+  }, []);
+
+  const handleApprove = (id, type) => {
+    if (type === 'vehicle') {
+      const updatedVehicles = vehicles.map(vehicle =>
+        vehicle.id === id ? { ...vehicle, status: 'Approved' } : vehicle
+      );
+      setVehicles(updatedVehicles);
+      localStorage.setItem('vehicleSubmissions', JSON.stringify(updatedVehicles));
+    } else if (type === 'bid') {
+      const updatedBids = bids.map(bid =>
+        bid.id === id ? { ...bid, status: 'Approved' } : bid
+      );
+      setBids(updatedBids);
+      localStorage.setItem('bids', JSON.stringify(updatedBids));
+    }
+  };
+
+  const handleReject = (id, type) => {
+    if (type === 'vehicle') {
+      const updatedVehicles = vehicles.map(vehicle =>
+        vehicle.id === id ? { ...vehicle, status: 'Rejected' } : vehicle
+      );
+      setVehicles(updatedVehicles);
+      localStorage.setItem('vehicleSubmissions', JSON.stringify(updatedVehicles));
+    } else if (type === 'bid') {
+      const updatedBids = bids.map(bid =>
+        bid.id === id ? { ...bid, status: 'Rejected' } : bid
+      );
+      setBids(updatedBids);
+      localStorage.setItem('bids', JSON.stringify(updatedBids));
+    }
+  };
+
+  const handleStartBidDate = (vehicleId, date) => {
+    const updatedVehicles = vehicles.map(vehicle =>
+      vehicle.id === vehicleId ? { ...vehicle, bidStartDate: date } : vehicle
+    );
+    setVehicles(updatedVehicles);
+    localStorage.setItem('vehicleSubmissions', JSON.stringify(updatedVehicles));
+  };
+
+  const handleClearAll = (type) => {
+    if (type === 'vehicles') {
+      setVehicles([]);
+      localStorage.removeItem('vehicleSubmissions');
+    } else if (type === 'bids') {
+      setBids([]);
+      localStorage.removeItem('bids');
+    }
+  };
+
   return (
     <div className="admindash">
-      {/* Background Image with Overlay */}
       <div className="bg2">
         <img src={bg2} alt="bg2" className="image" />
         <div className="overlay">
-          <h2>Detailed Vehicle Information</h2>
-          <p>
-            Get Comprehensive Insights on Every Vehicle—Specifications, History, and More to Make an Informed Bid.<br /> <br />
-          </p>
+          <h2>Admin Dashboard</h2>
+          <p>Manage Vehicle Submissions and Bids Here.</p>
         </div>
       </div>
 
-      {/* Main Content */}
+      <div className="tabs">
+        <button
+          className={activeTab === 'vehicles' ? 'active' : ''}
+          onClick={() => setActiveTab('vehicles')}
+        >
+          Vehicles for Approval
+        </button>
+        <button
+          className={activeTab === 'bids' ? 'active' : ''}
+          onClick={() => setActiveTab('bids')}
+        >
+          Bids for Approval
+        </button>
+      </div>
+
       <div className="container">
-        {/* Left Section: Vehicle Info */}
-        <div className="form-container">
-          <div className="input-container">
-            <h1>Toyota CAr</h1>
-            <p>$55</p>
-            <p>
-            This Toyota Corolla is available for viewing and test drive at [Dealership Name] in Colombo, Sri Lanka.
-            </p>
+        {activeTab === 'vehicles' && (
+          <div>
+            <h1>Vehicles for Approval</h1>
+            <table className="bids-table">
+              <thead>
+                <tr>
+                  <th>Image</th> {/* New Column for Image */}
+                  <th>Make</th>
+                  <th>Model</th>
+                  <th>Year</th>
+                  <th>Price</th>
+                  <th>Status</th>
+                  <th>Submission Date</th>
+                  <th>Start Bid Date</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {vehicles.map(vehicle => (
+                  <tr key={vehicle.id}>
+                    <td>
+                      <img 
+                        src={vehicle.image} 
+                        alt={`${vehicle.make} ${vehicle.model}`} 
+                        style={{ width: '50px', height: 'auto' }} // Small size
+                      />
+                    </td>
+                    <td>{vehicle.make}</td>
+                    <td>{vehicle.model}</td>
+                    <td>{vehicle.year}</td>
+                    <td>${vehicle.price}</td>
+                    <td className={`status ${vehicle.status || 'Pending'}`}>{vehicle.status || 'Pending'}</td>
+                    <td>{vehicle.submissionDate}</td>
+                    <td>
+                      <input
+                        type="date"
+                        onChange={(e) => handleStartBidDate(vehicle.id, e.target.value)}
+                      />
+                    </td>
+                    <td>
+                      <button className="approve-button" onClick={() => handleApprove(vehicle.id, 'vehicle')}>Approve</button>
+                      <button className="reject-button" onClick={() => handleReject(vehicle.id, 'vehicle')}>Reject</button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <button className="clear-button" onClick={() => handleClearAll('vehicles')}>Clear All Vehicles</button>
           </div>
+        )}
 
-          {/* Variant Buttons */}
-          <p>Variants</p>
-          <div className="buttnvar">
-            <button>Option One</button>
-            <button>Option Two</button>
-            <button>Option Three</button>
+        {activeTab === 'bids' && (
+          <div>
+            <h1>Bids for Approval</h1>
+            <table className="bids-table">
+              <thead>
+                <tr>
+                  <th>Bidder Name</th>
+                  <th>Bid Amount</th>
+                  <th>Vehicle Name</th>
+                  <th>Vehicle Model</th>
+                  <th>Minimum Bid Value</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {bids.map(bid => (
+                  <tr key={bid.id}>
+                    <td>{bid.name}</td>
+                    <td>${bid.bidValue}</td>
+                    <td>{bid.vehicle.name}</td>
+                    <td>{bid.vehicle.variant}</td>
+                    <td>${bid.vehicle.price}</td>
+                    <td className={`status ${bid.status || 'Pending'}`}>{bid.status || 'Pending'}</td>
+                    <td>
+                      <button className="approve-button" onClick={() => handleApprove(bid.id, 'bid')}>Approve</button>
+                      <button className="reject-button" onClick={() => handleReject(bid.id, 'bid')}>Reject</button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <button className="clear-button" onClick={() => handleClearAll('bids')}>Clear All Bids</button>
           </div>
-          <p className="free-shipping">Free shipping over $50</p>
-
-          {/* Expandable Sections */}
-          <div className="details-section">
-            <p>Details</p>
-            <p>This is a pristine Toyota Corolla 2023 in pristine white condition. With only 10,000 kilometers on the clock, it's practically brand new. Enjoy 
-                a smooth ride with its automatic transmission and powerful 1.6L engine.</p>
-          </div>
-
-          <div className="details-section">
-            <p>Condition</p>
-            <p>The car is in excellent condition both inside and out. It has been meticulously maintained and has no accident history. All features and components are in perfect working order.</p>
-          </div>
-
-          <div className="details-section">
-            <p>Location</p>
-            <p>This Toyota Corolla is available for viewing and test drive at [Dealership Name] in Colombo, Sri Lanka.</p>
-          </div>
-        </div>
-
-        {/* Right Section: Vehicle Image and Actions */}
-        <div className="vehicle-display">
-          <img src={car1} alt="Vehicle" className="vehicle-image" />
-
-          {/* Thumbnails for more vehicle images */}
-          
-
-          {/* Approve/Reject Buttons */}
-          <div className="button-container">
-            <button className="approve-button">APPROVE</button>
-            <button className="reject-button">REJECT</button>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );

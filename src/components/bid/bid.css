@@ -3,173 +3,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
     background-color: white; /* Changed to white */
-  }
-  
-  /* Container */
-  .container {
+}
+
+/* Container */
+.container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1200px;
-  }
-  
-  /* Bid section */
-  .bid-section {
-    width: 45%;
-  }
-  
-  .bid-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .bid-section p {
-    font-size: 14px;
-    color: #666;
+}
+
+.vehicle-info {
     margin-bottom: 20px;
-  }
-  
-  .bid-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .bid-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    background-color: white;
-  }
-  
-  .bid-item span {
-    font-size: 16px;
-  }
-  
-  .new-bid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 15px;
-    background-color: white;
-  }
-  
-  .new-bid input {
-    border: none;
-    outline: none;
-    font-size: 16px;
-  }
-  
-  .new-bid .bid-name {
-    width: 50%;
-  }
-  
-  .new-bid .bid-value {
-    width: 40%;
-  }
-  
-  /* Payment section */
-  .payment-section {
-    width: 45%;
-  }
-  
-  .payment-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .payment-section p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .payment-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .payment-form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .payment-form label {
-    font-size: 14px;
-    margin-bottom: 5px;
+}
+
+.vehicle-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Control image size */
     display: block;
-  }
-  
-  .payment-form input {
+    margin: 0 auto; /* Center image */
+}
+
+.bid-section, .payment-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.bid-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bid-item {
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
-    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.bid-item:last-child {
+    border-bottom: none;
+}
+
+.new-bid {
+    margin: 20px 0;
+}
+
+.new-bid input {
+    margin: 10px 0;
+    width: calc(50% - 10px);
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .payment-form .card-number {
-    display: flex;
-    align-items: center;
-  }
-  
-  .payment-form .card-number input {
-    width: 100%;
-  }
-  
-  .payment-form .card-number img {
-    margin-left: 10px;
-    width: 20px;
-  }
-  
-  .payment-form .expiry-cvv {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .payment-form .expiry-cvv input {
-    width: 48%;
-  }
-  
-  .payment-form .city-state-zip {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .payment-form .city-state-zip input {
-    width: 30%;
-  }
-  
-  /* Buttons */
-  .button-group {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-  }
-  
-  .button-group button {
+    border-radius: 4px;
+}
+
+.submit-bid-btn {
     padding: 10px 20px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .button-group .cancel-btn {
-    background-color: #ccc;
-    margin-right: 10px;
-  }
-  
-  .button-group .save-btn {
-    background-color: #000;
-    color: white;
-  }
-  
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submit-bid-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.alert-message { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; /* Full height of the viewport */
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background for visibility */
+    color: #d9534f; /* Bootstrap's danger color */
+    text-align: center;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the message */
+}
