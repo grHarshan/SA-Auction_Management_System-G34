@@ -89,7 +89,7 @@ const Admindash = () => {
         </button>
       </div>
 
-      <div className="container">
+      <div className="container1">
         {activeTab === 'vehicles' && (
           <div>
             <h1>Vehicles for Approval</h1>

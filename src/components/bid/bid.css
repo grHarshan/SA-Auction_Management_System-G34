@@ -13,13 +13,15 @@ body {
 }
 
 /* Container */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-    max-width: 1200px;
+.container11 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
+
 
 .vehicle-info {
     margin-bottom: 20px;

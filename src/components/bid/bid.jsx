@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import bg2 from '../../assets/bg2.png';
 import './bid.css';
 import FeaturedAuctions from '../FeaturedAuctions/FeaturedAuctions';
+import Cart from '../Cart/cart';
 
 const Bid = () => {
   const location = useLocation();
@@ -52,9 +53,9 @@ const Bid = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container11">
         <div className="vehicle-info">
-          <h3>Vehicle Details</h3>
+          <h2>Vehicle Details</h2>
           <table className="vehicle-details-table">
             <tbody>
               <tr>
@@ -127,8 +128,9 @@ const Bid = () => {
             <button type="button" className="submit-bid-btn save-btn" onClick={handleBidSubmit}>Submit Bid</button>
           </div>
         </div>
-      </div>
-
+        </div>
+      <Cart />
+      
       <FeaturedAuctions />
     </div>
   );
