@@ -1,0 +1,121 @@
+
+/* Tabs */
+.tabs ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.tabs ul li {
+  margin: 0 20px;
+}
+
+.tabs ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tabs ul li .active {
+  font-weight: bold;
+  color: #007bff; /* Change color as per your theme */
+  border-bottom: 2px solid #007bff;
+}
+
+/* Profile Section */
+.profile3 {
+  text-align: center;
+  margin: 20px;
+}
+
+.clear-history-btn {
+  margin-bottom: 20px;
+}
+
+/* Vehicles Container */
+.vehicles-container {
+  max-width: 90%; 
+  margin: 20px auto; 
+  padding: 20px; 
+  border-radius: 8px; 
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Vehicles Table */
+.vehicles-table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Remove space between borders */
+}
+
+th {
+  padding: 15px; 
+  background-color: #007bff; /* Header background color */
+  
+}
+
+td {
+  padding: 15px; 
+  border-bottom: 1px solid #ddd; 
+  color: #333333; 
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+/* Button Styles */
+.clear-history-btn {
+  width: 150px;
+  background-color: #dc3545; 
+  color: white;
+  border: none;
+  padding: 8px 15px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+.clear-history-btn:hover {
+  background-color: #c82333; 
+}
+
+/* Status Styles */
+.status-approved {
+  color: green;
+  background-color: #d4edda; /* Light green background */
+}
+
+.status-pending {
+  color: orange;
+  background-color: #fff3cd; /* Light orange background */
+}
+
+.status {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center; /* Center text for status */
+}
+
+.seller-image {
+  width: 100px; /* Adjust the width as necessary */
+  height: auto; /* Keep aspect ratio */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+
+.bidding-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table */
+  font-family: Verdana;
+}

@@ -1,52 +1,113 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './profile.css';
 import bg2 from '../../assets/bg2.png';
-import { Link } from 'react-router-dom'; 
-import p1 from '../../assets/p1.jpg'; 
+import p1 from '../../assets/p1.jpg';
 
-const profile = () => {
+const Profile = () => {
+  const [profileData, setProfileData] = useState({
+    name: 'James',
+    email: 'james@example.com',
+    phone: '123-456-7890',
+    houseNumber: '123',
+    province: 'Ontario',
+  });
+
+  useEffect(() => {
+    // Load saved profile data from localStorage on component mount
+    const savedProfileData = JSON.parse(localStorage.getItem('profileData'));
+    if (savedProfileData) {
+      setProfileData(savedProfileData);
+    }
+  }, []);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setProfileData({ ...profileData, [name]: value });
+  };
+
+  const handleSaveChanges = () => {
+    // Save profile data to localStorage
+    localStorage.setItem('profileData', JSON.stringify(profileData));
+    alert('Profile updated successfully!');
+  };
+
   return (
-    <div>
+    <div className="profile-container">
       <div className="bg2">
-        <img src={bg2} alt="bg2" className="image" />
+        <img src={bg2} alt="Background" className="background-image" />
         <div className="overlay">
           <h2>Manage Your Profile</h2>
-          <p>
-            Update Your Details, Track Your Bids, and Customize Your Preferences—All in One Place.
-          </p>
+          <p>Update your details, track your bids, and customize preferences all in one place.</p>
         </div>
       </div>
-       <div><br /><br /><br />
-       <p className="tab-header"> <ul> <li><Link to="/profile">Personal info </Link></li>
-          <li><Link to="/profile2"> Bidding History </Link></li>
-          <li><Link to="/profile3">Selling Statues</Link></li></ul></p>
-       </div>
-      <div className="profile-form">
-        <div className="header">
-          <div className="tabs">
-            
-             
+
+      <div className="tabs">
+        <ul>
+          <li>
+            <Link to="/profile" className={location.pathname === '/profile' ? 'active' : ''}>Personal Info</Link>
+          </li>
+          <li>
+            <Link to="/profile2" className={location.pathname === '/profile2' ? 'active' : ''}>Bidding History</Link>
+          </li>
+          <li>
+            <Link to="/profile3" className={location.pathname === '/profile3' ? 'active' : ''}>Selling Status</Link>
+          </li>
+        </ul>
+      </div>
+
+      <div className="profile-content">
+        <div className="profile-card">
+          <div className="user-profile">
+            <img src={p1} alt="User Profile" />
           </div>
+          <div className="welcome">
+            <p>Welcome</p>
+            <h1>{profileData.name}</h1>
+            <p>Read or edit your profile details here.</p>
+          </div>
+          <div className="profile-inputs">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={profileData.name}
+              onChange={handleInputChange}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              value={profileData.email}
+              onChange={handleInputChange}
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone number"
+              value={profileData.phone}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              name="houseNumber"
+              placeholder="House number"
+              value={profileData.houseNumber}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              name="province"
+              placeholder="Province"
+              value={profileData.province}
+              onChange={handleInputChange}
+            />
+          </div>
+          <button className="save-changes-btn" onClick={handleSaveChanges}>Save Changes</button>
         </div>
-        <div className="welcome">
-          <p>Welcome</p>
-          <h1>James</h1>
-          <p>Read or edit profile details here.</p>
-        </div> <br />
-        <div className="user-profile">
-          <img src={p1}  alt="user-profile" />
-        </div>
-        <div className="profile-inputs">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="E-mail" />
-          <input type="tel" placeholder="Phone number" />
-          <input type="text" placeholder="House number" />
-          <input type="text" placeholder="Province" />
-        </div>
-        <button className="change-info">Change info</button>
       </div>
     </div>
   );
 };
 
-export default profile;
+export default Profile;

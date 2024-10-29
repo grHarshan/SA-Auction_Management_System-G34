@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './sell.css';
 import bg2 from '../../assets/bg2.png';
 import car1 from '../../assets/car1.png';
 
 const Sell = () => {
+  const navigate = useNavigate(); // Initialize navigate
   const [vehicleDetails, setVehicleDetails] = useState({
     make: '',
     model: '',
@@ -14,6 +16,8 @@ const Sell = () => {
     location: '',
   });
 
+  const [image, setImage] = useState(car1); // State for the uploaded image
+
   // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,15 +27,50 @@ const Sell = () => {
     });
   };
 
+  // Handle image upload
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImage(reader.result); // Set the uploaded image as the new state
+      };
+      reader.readAsDataURL(file); // Convert the file to a data URL
+    }
+  };
+
   // Handle form submission
-  const handleSubmit = () => {
-    // Add your submit logic here
-    console.log('Submitted Vehicle Details:', vehicleDetails);
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    const submissionData = {
+      id: Date.now(), // Unique ID
+      ...vehicleDetails,
+      status: 'Pending',
+      submissionDate: new Date().toLocaleDateString(), // Submission date
+      image: image, // Include the uploaded image in the submission data
+    };
+
+    // Retrieve current data from localStorage, add new submission, and save it back
+    try {
+      const currentSubmissions = JSON.parse(localStorage.getItem('vehicleSubmissions')) || [];
+      currentSubmissions.push(submissionData);
+      localStorage.setItem('vehicleSubmissions', JSON.stringify(currentSubmissions));
+
+      console.log('Submitted Vehicle Details:', submissionData);
+
+      // Reset the form
+      handleCancel();
+
+      // Navigate after successful submission
+      navigate('/profile3'); // Navigate immediately after saving
+    } catch (error) {
+      console.error('Error saving submission:', error);
+    }
   };
 
   // Handle cancel action
   const handleCancel = () => {
-    // Reset form or navigate away
     setVehicleDetails({
       make: '',
       model: '',
@@ -41,6 +80,7 @@ const Sell = () => {
       condition: '',
       location: '',
     });
+    setImage(car1); // Reset image to default
   };
 
   return (
@@ -56,24 +96,10 @@ const Sell = () => {
       
       {/* Main Content */}
       <div className="container01">
+        <h1>Vehicle Information</h1>
+
         {/* Form Section */}
         <div className="form-container">
-          <h1>Vehicle Information</h1>
-
-          {/* Image Container */}
-        <div className="image-container">
-          <img src={car1} alt="car1" className="vehi" />
-          <div className="image-upload-section">
-            <h3>Upload Vehicle Images</h3>
-            <div className="image-upload">
-              <input type="file" accept="image/*" />
-              <input type="file" accept="image/*" />
-              <input type="file" accept="image/*" />
-            </div>
-            <p className="note">* Upload up to 3 images to display on the bidding page.</p>
-          </div>
-        </div>
-          
           <label>Make</label>
           <input
             type="text"
@@ -134,17 +160,24 @@ const Sell = () => {
             onChange={handleChange}
             placeholder="e.g., Colombo, Sri Lanka"
           />
+        </div>
 
-          {/* Submit and Cancel Buttons */}
-          <div className="admin-actions">
-            <button className="submit-button" onClick={handleSubmit}>Submit</button>
-            <button className="cancel-button" onClick={handleCancel}>Cancel</button>
+        {/* Image Container */}
+        <div className="image-container">
+          <img src={image} alt="Uploaded Vehicle" className="vehi" />
+          <div className="image-upload-section">
+            <h3>Upload Vehicle Images</h3>
+            <div className="image-upload">
+              <input type="file" accept="image/*" onChange={handleImageChange} />
+            </div>
+            <p className="note">* Upload an image to display on the bidding page.</p>
           </div>
         </div>
 
-      
-
-        
+        <div className="admin-actions">
+          <button className="submit-button" onClick={handleSubmit}>Submit</button>
+          <button className="cancel-button" onClick={handleCancel}>Cancel</button>
+        </div>
       </div>
     </div>
   );

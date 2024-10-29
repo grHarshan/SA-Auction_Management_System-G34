@@ -33,10 +33,10 @@ const Hero = () => {
         <div className="bg2">
           <img src={bg2} alt="bg2" className="image2" />
           <div className="overlay">
-            <p>Trusted Partners</p>
-            <h2>Partnering with the Most Trusted Names in the Industry</h2>
+            
+            <h2>Explore Our Wide Selection</h2>
             <p>
-              Our auctions are backed by reputable companies, ensuring you get the best quality and service with every bid. In Collaboration with Industry Leaders—Ensuring Quality and Reliability in Every Auction.
+            Discover a Diverse Range of Vehicles—From Everyday Cars to Exotic Models. Find the Perfect Fit for You.
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Hero = () => {
         <div className="bg2">
           <img src={bg2} alt="bg2" className="image2" />
           <div className="overlay">
-            <p>Trusted Partners</p>
+           
             <h2>Partnering with the Most Trusted Names in the Industry</h2>
             <p>
               Our auctions are backed by reputable companies, ensuring you get the best quality and service with every bid. In Collaboration with Industry Leaders—Ensuring Quality and Reliability in Every Auction.
@@ -96,10 +96,10 @@ const Hero = () => {
         <div className="bg2">
           <img src={bg2} alt="bg2" className="image2" />
           <div className="overlay">
-            <p>Trusted Partners</p>
-            <h2>Partnering with the Most Trusted Names in the Industry</h2>
+            
+            <h2>Explore Our Wide Selection</h2>
             <p>
-              Our auctions are backed by reputable companies, ensuring you get the best quality and service with every bid. In Collaboration with Industry Leaders—Ensuring Quality and Reliability in Every Auction.
+           Discover a Diverse Range of Vehicles—From Everyday Cars to Exotic Models. Find the Perfect Fit for You.
             </p>
           </div>
         </div>

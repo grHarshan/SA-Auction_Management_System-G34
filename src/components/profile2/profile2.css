@@ -1,125 +1,130 @@
+.tabs ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.tabs ul li {
+  margin: 0 20px;
+}
+
+.tabs ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tabs ul li .active {
+  font-weight: bold;
+  color: #007bff; /* Change color as per your theme */
+  border-bottom: 2px solid #007bff;
+}
+
+.bidding-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table */
+  font-family: Verdana;
+}
+
+.table-container {
+  max-width: 80%; 
+  margin: 20px auto; 
+  padding: 20px; 
+  border-radius: 8px; 
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
 .header {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    text-align: left;
-  }
-   
-  p ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  p li {
-    margin-left: 30px;
-  }
-  
-  p a {
-    text-decoration: none;
-    color:black;
-    font-family: Verdana;
-    text-align: left;
-  }
-  .bidding-table {
-    width: 70%;
-    border-collapse: collapse;
-    margin-left: 200px;
-    font-family: Verdana;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-family: Verdana;
-  }
-  
-  .search-sort {
-    display: flex;
-    align-items: center;
-  }
-  
-  input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  select {
-    padding: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid black;
-  }
-  th, td {
-    border: none; /* Remove column borders */
-    padding: 8px;
-    text-align: left;
-  }
-  
-  tr {
-    border-bottom: 1px solid #000000; /* Add row borders */
-  }
-  
-  
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-   
-  .tdatabox {
-    background-color: #ffffff;
-    color: #000;
-    padding: 10px 20px;
-    border: 1px solid #000;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+ 
 }
-.btn1{
-    margin-left: 530px;
-    background-color:#b3e6df;
-    color: #00B69B;
-    padding: 10px 20px;
-    border: 2px solid#00B69B;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100px;
+
+.search-sort {
+  display: flex;
+  align-items: center;
 }
-.btn2{
-    margin-left: 530px;
-    background-color:#b6a3e3;
-    color: #6226EF;
-    padding: 10px 20px;
-    border: 2px solid#6226EF;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100px;
+
+input[type="text"],
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
 }
-.btn3{
-    margin-left: 530px;
-    background-color:#f39d9d;
-    color: #943030;
-    padding: 10px 20px;
-    border: 2px solid#943030;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100px;
+
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
-.btn4{
-    margin-left: 530px;
-    background-color:#f39d9d;
-    color: #943030;
-    padding: 10px 20px;
-    border: 2px solid#943030;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100px;
+
+th,
+td {
+  border: none; /* Remove column borders */
+  padding: 8px;
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #000; /* Add row borders */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tdatabox {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-history-btn {
+  background-color: #a31228;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-history-btn:hover {
+  background-color: #ce0d0d;
+}
+
+.view-details-btn {
+  background-color: transparent; /* No background */
+  color: #000; /* Black text */
+  padding: 10px 20px;
+  border: 1px solid #000; /* Black border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for hover effect */
+}
+
+.view-details-btn:hover {
+  background-color: #000; /* Black background on hover */
+  color: #fff; /* White text on hover */
+}
+
+.status-pending {
+  color: blue; /* Color for Pending status */
+  background-color: #cce5ff; /* Light blue */
+}
+
+.status-approved {
+  color: green; /* Color for Approved status */
+  background-color: #d4edda; /* Light green */
+}
+
+.status-rejected {
+  color: red; /* Color for Rejected status */
+  background-color: #f8d7da; /* Light red */
 }

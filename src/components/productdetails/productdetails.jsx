@@ -14,8 +14,8 @@ const ProductDetails = () => {
     }
 
     const handleBidClick = () => {
-        navigate('/bid');
-    };
+        navigate('/bid', { state: { vehicle } }); 
+      };
 
     const isLiveAuction = vehicle.auctionType === 'live';
 
@@ -37,17 +37,15 @@ const ProductDetails = () => {
                 <div className="form-container">
                     <div className="input-container">
                         <h1>{vehicle.name}</h1>
-                        <p>${vehicle.price}</p>
+                        <p>{"Minimum Bid = $"+vehicle.price}</p>
                         <button className="button" style={{ backgroundColor: isLiveAuction ? 'green' : 'orange', color: '#fff' }}>
-                            {isLiveAuction ? 'Bid Now' : 'Auction Starts Soon'}
+                            {isLiveAuction ? 'LiveAuction' : 'Auction Starts Soon'}
                         </button>
                         
                         <p>Variant: {vehicle.variant}</p>
                     </div>
 
-                    <div className="bidbutton">
-                        <button className="button33" onClick={handleBidClick}>BID Now</button>
-                    </div>
+                    
 
                     <div className="details">
                         <h3>Details</h3>
@@ -63,8 +61,13 @@ const ProductDetails = () => {
                         <h3>Returns</h3>
                         <p>{vehicle.returnDetails}</p>
                     </div>
+
+                    <div className="bidbutton">
+                        <button className="button33" onClick={handleBidClick}>BID Now</button>
+                    </div>
                 </div>
             </div>
+            
             <FeaturedAuctions />
             
         </div>

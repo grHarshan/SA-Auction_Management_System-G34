@@ -4,15 +4,20 @@
 }
 
 .container01 {
-  width: 70%; 
-  margin: 20px auto;
+  max-width: 1200px; 
+  width: 100%; 
+  margin: 20px auto; 
   padding: 20px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .form-container {
+  max-width: 1200px; 
+  width: 100%; 
+  margin: 20px auto;
   margin-bottom: 20px;
 }
 
@@ -67,13 +72,16 @@
 }
 
 .vehi {
-  width: 60%;
+  width: 30%;
   height: auto;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .image-upload-section {
+  width: 50%;
   margin-top: 20px;
+  margin: 20px auto; 
+  padding: 20px;
 }
 
 .image-upload {

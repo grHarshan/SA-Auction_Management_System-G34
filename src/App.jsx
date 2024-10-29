@@ -14,6 +14,7 @@ import Login from './components/Login/Login';
 import Bid from './components/bid/bid'; 
 import AboutUs from './components/AboutUs/AboutUs';
 import ContactUs from './components/ContactUs/ContactUs' ;
+import Admindash from './components/admindash/admindash';
 
 const App = () => {
   return (
@@ -33,7 +34,9 @@ const App = () => {
           <Route path="/bid" element={<Bid />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/admindash" element={<Admindash />} />
           <Route path="*" element={<Navigate to="/signin" />} />
+          
         </Routes>
         <Footer />  
       </div>
