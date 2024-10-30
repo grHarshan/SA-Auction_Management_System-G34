@@ -50,7 +50,7 @@ const Profile3 = () => {
       <br />
       <div className="profile3">
       <div className="header">
-          <h2>Your Bidding History</h2>
+          <h2>Your selling History</h2>
           <button onClick={handleClearHistory} className="clear-history-btn">Clear History</button>
         </div>
         
