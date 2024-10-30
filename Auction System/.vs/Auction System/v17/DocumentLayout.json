@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\New Auction - New Two\\Auction System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|e:\\new auction - new two\\auction system\\auction system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|solutionrelative:auction system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|e:\\new auction - new two\\auction system\\auction system\\controllers\\dbmodelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|solutionrelative:auction system\\controllers\\dbmodelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|e:\\new auction - new two\\auction system\\auction system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|solutionrelative:auction system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|e:\\new auction - new two\\auction system\\auction system\\models\\vehiclemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|solutionrelative:auction system\\models\\vehiclemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|e:\\new auction - new two\\auction system\\auction system\\models\\dbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|solutionrelative:auction system\\models\\dbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|e:\\new auction - new two\\auction system\\auction system\\auction system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|solutionrelative:auction system\\auction system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|e:\\new auction - new two\\auction system\\auction system\\migrations\\20241022031312_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EC25EF5-C5EC-493C-95A3-0B8C445CE227}|Auction System\\Auction System.csproj|solutionrelative:auction system\\migrations\\20241022031312_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\New Auction - New Two\\Auction System\\Auction System\\appsettings.json",
+              "RelativeDocumentMoniker": "Auction System\\appsettings.json",
+              "ToolTip": "E:\\New Auction - New Two\\Auction System\\Auction System\\appsettings.json",
+              "RelativeToolTip": "Auction System\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-22T03:06:14.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbModelController.cs",
+              "DocumentMoniker": "E:\\New Auction - New Two\\Auction System\\Auction System\\Controllers\\DbModelController.cs",
+              "RelativeDocumentMoniker": "Auction System\\Controllers\\DbModelController.cs",
+              "ToolTip": "E:\\New Auction - New Two\\Auction System\\Auction System\\Controllers\\DbModelController.cs",
+              "RelativeToolTip": "Auction System\\Controllers\\DbModelController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwDAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T03:20:05.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VehicleModel.cs",
+              "DocumentMoniker": "E:\\New Auction - New Two\\Auction System\\Auction System\\Models\\VehicleModel.cs",
+              "RelativeDocumentMoniker": "Auction System\\Models\\VehicleModel.cs",
+              "ToolTip": "E:\\New Auction - New Two\\Auction System\\Auction System\\Models\\VehicleModel.cs",
+              "RelativeToolTip": "Auction System\\Models\\VehicleModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T03:10:36.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\New Auction - New Two\\Auction System\\Auction System\\Program.cs",
+              "RelativeDocumentMoniker": "Auction System\\Program.cs",
+              "ToolTip": "E:\\New Auction - New Two\\Auction System\\Auction System\\Program.cs",
+              "RelativeToolTip": "Auction System\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T03:07:07.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20241022031312_InitialCreate.cs",
+              "DocumentMoniker": "E:\\New Auction - New Two\\Auction System\\Auction System\\Migrations\\20241022031312_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Auction System\\Migrations\\20241022031312_InitialCreate.cs",
+              "ToolTip": "E:\\New Auction - New Two\\Auction System\\Auction System\\Migrations\\20241022031312_InitialCreate.cs",
+              "RelativeToolTip": "Auction System\\Migrations\\20241022031312_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T03:13:13.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbModel.cs",
+              "DocumentMoniker": "E:\\New Auction - New Two\\Auction System\\Auction System\\Models\\DbModel.cs",
+              "RelativeDocumentMoniker": "Auction System\\Models\\DbModel.cs",
+              "ToolTip": "E:\\New Auction - New Two\\Auction System\\Auction System\\Models\\DbModel.cs",
+              "RelativeToolTip": "Auction System\\Models\\DbModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T03:03:37.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Auction System.csproj",
+              "DocumentMoniker": "E:\\New Auction - New Two\\Auction System\\Auction System\\Auction System.csproj",
+              "RelativeDocumentMoniker": "Auction System\\Auction System.csproj",
+              "ToolTip": "E:\\New Auction - New Two\\Auction System\\Auction System\\Auction System.csproj",
+              "RelativeToolTip": "Auction System\\Auction System.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-22T03:08:22.771Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
